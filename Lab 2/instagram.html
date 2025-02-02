@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-div form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 2vw;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.form-div form .instaLogo {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.form-div form .input {
+    width: 90%;
+    padding: .6rem;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    margin: 3px;
+}
+
+.login-btn {
+    width: 97%;
+    padding: .4rem;
+    font-weight: 700;
+    background-color: rgb(1, 183, 255);
+    border: none;
+    border-radius: 8px;
+    margin: 8px 0px;
+    color: white;
+}
+
+.or-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or-text {
+    padding: 0 10px;
+    color: #8e8e8e;
+}
+
+
+.fb-login {
+    font-weight: 700;
+    font-size: 95%;
+    color: rgb(72, 141, 232);
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.sign-up {
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 20px;
+    margin: 10px;
+}
+.sign-link{
+    color: rgb(72, 141, 232);
+}
+.get-app {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.store {
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#apple {
+  
+    width: 130px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+#play {
+
+    margin-right: 20px;
+    width: 135px;
+    border-radius: 8px;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Instagram Login</title>
+</head>
+
+<body>
+    <main>
+        <img src="ins.jpeg" alt="" class="phoneImg">
+        <div class="form-div">
+            <form action="">
+                <img class="instaLogo" src="instalogo.png" alt="logo">
+                <input type="text" class="input" placeholder="Phone number, username, or email" required>
+                <input type="password" class="input" required placeholder="Password">
+                <button class="login-btn">Log In</button>
+                <div class="or-container">
+                    <span class="line"></span>
+                    <span class="or-text">OR</span>
+                    <span class="line"></span>
+                </div>
+                <a href="#" class="fb-login"><i class='bx bxl-facebook-square'></i>Log in with Facebook</a>
+            </form>
+            <div class="sign-up">
+                <p>Don't have an account? <a href="#" class="sign-link">Sign up   </a></p>
+            </div>
+            <div class="get-app">
+                <p>Get the app</p>
+                <div class="store">
+                    <img id="apple" src="appstore.png" alt="">
+                    <img id="play" src="playstore.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

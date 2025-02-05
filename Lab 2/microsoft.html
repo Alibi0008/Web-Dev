@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <style>
+        body{
+    font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav a {
+    margin: 15px;
+    text-decoration: none;
+    color: #616161;
+    margin-top: 1px;
+    padding: 30px 0px 20px;
+    height: 48px;
+    font-size: 13px;
+
+}
+.nav-right a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #616161;
+    margin-top: 1px;
+    padding: 16px 8px 10px;
+    height: 48px;
+    font-size: 15px;
+}
+
+.main_page {
+    min-height: 591px;
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome {
+    max-width: 421px;
+    padding: 178px;
+    margin-top: -50px;
+}
+.welcome_title {
+    font-size: 1.825em;
+}
+.welcome_text {
+    margin-top: 24px;
+    line-height: 1.5;
+}
+button{
+    background-color: rgb(11, 97, 201);
+    border:0px;
+    padding: .625rem .75rem;
+}
+.welcome_button a {
+    margin-top: 10px;
+    color:white;
+    padding: .625rem .75rem;
+    font-size: 1rem;
+    font-weight: 600px;
+    text-decoration: none;
+}
+.main_img {
+    margin-top: -30px;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+}
+.main_img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    margin-top: -15px;
+    color: #333;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-column {
+    width: 200px;
+    margin-bottom: 20px;
+    
+}
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 0;
+
+}
+.footer-column ul li {
+    margin-bottom: 15px;
+}
+.footer-column ul li a {
+    text-decoration: none;
+    color: #616161;
+
+
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+}
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #616161;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <header class="header">
+                <div class="logo">
+                    <img src="logo_micro.png" alt="Microsoft">
+                </div>
+                <nav>
+                    <a href="#">Microsoft 365</a>
+                    <a href="#">Office</a>
+                    <a href="#">Windows</a>
+                    <a href="#">Поддержка</a>
+                </nav>
+                <div class="nav-right">
+                    <a href="#">Продукты Майкрософт ▼</a>
+                    <a href="#">Поиск 🔍</a>
+                    <a href="#">Войти </a>
+                </div>
+            </header>
+            <section class="main_page">
+                <div class="main_img">
+                    <img src="back_micro.png" alt="welcome image">
+                 </div>
+                <div class="welcome">
+                    <h1 class="welcome_title">Добивайтесь необычного</h1>
+                    <p class="welcome_text"> Microsoft 365 предоставляет облачное хранилище, безопасность и Microsoft Copilot в ваших любимых приложениях. И все это в одном плане.</p>
+                    <button class="welcome_button">
+                        <a href="#">Купить Microsoft 365</a>
+                    </button>
+                 </div>
+                 
+            </section>
+        </div>
+        <footer class="footer">
+            <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Что нового?</h3>
+            <ul>
+                <li><a href="#">Microsoft Copilot</a></li>
+                <li><a href="#">Microsoft 365</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Microsoft Store</h3>
+            <ul>
+                <li><a href="#">Профиль учетной записи</a></li>
+                <li><a href="#">Возврат товаров</a></li>
+                <li><a href="#">Отслеживание заказа</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Для образования</h3>
+            <ul>
+                <li><a href="#">Microsoft для образования</a></li>
+                <li><a href="#">Устройства для образования</a></li>
+                <li><a href="#">Microsoft Teams для образования</a></li>
+                <li><a href="#">Microsoft 365 для образования</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Для бизнеса</h3>
+            <ul>
+                <li><a href="#">Microsoft Cloud</a></li>
+                <li><a href="#">Microsoft Security</a></li>
+                <li><a href="#">Azure</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Разработчики и ИТ</h3>
+            <ul>
+                <li><a href="#">Документация</a></li>
+                <li><a href="#">Microsoft Learn</a></li>
+                <li><a href="#">Visual Studio</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Компания</h3>
+            <ul>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">О корпорации Microsoft</a></li>
+                <li><a href="#">Инвесторы</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-language">
+            <span>&#127760; Русский (Казахстан)</span>
+        </div>
+        <div class="footer-links">
+            <a href="#">Конфиденциальность</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Товарные знаки</a>
+        </div>
+        <div class="footer-copyright">
+            <span>&copy; Microsoft 2025</span>
+        </div>
+    </div>
+    </footer>
+    
+    </div>
+</body>
+</html>

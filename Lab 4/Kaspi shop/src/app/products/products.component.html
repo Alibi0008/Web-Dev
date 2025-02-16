@@ -1,0 +1,26 @@
+<div class="product-list">
+  <div class="product-card" *ngFor="let product of products">
+    <!-- card-body (верх) -->
+    <div class="card-body">
+      <img [src]="product.image" [alt]="product.name" class="product-image">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p>⭐ {{ product.rating }}</p>
+    </div>
+
+    <!-- card-actions (низ) -->
+    <div class="card-actions">
+      <div class="share-buttons">
+        <a [href]="getWhatsAppLink(product)" target="_blank">
+          <img src="assets/WhatsApp.svg" alt="WhatsApp" width="30">
+        </a>
+        <a [href]="getTelegramLink(product)" target="_blank">
+          <img src="assets/Telegram_logo.svg" alt="Telegram" width="30">
+        </a>
+      </div>
+      <a [href]="product.link" target="_blank" class="buy-button">
+        Купить
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="product-list">
+  <div class="product-card" *ngFor="let product of filteredProducts">
+    <!-- Card body -->
+    <div class="card-body">
+      <img [src]="product.image" [alt]="product.name" class="product-image" />
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p>⭐ {{ product.rating }}</p>
+    </div>
+
+    <!-- Card actions -->
+    <div class="card-actions">
+      <div class="share-buttons">
+        <a [href]="getWhatsAppLink(product)" target="_blank">
+          <img src="assets/WhatsApp.svg" alt="WhatsApp" width="30" />
+        </a>
+        <a [href]="getTelegramLink(product)" target="_blank">
+          <img src="assets/Telegram_logo.svg" alt="Telegram" width="30" />
+        </a>
+      </div>
+      <a [href]="product.link" target="_blank" class="buy-button">Buy</a>
+    </div>
+
+    <!-- Like section -->
+    <div class="like-section">
+      <button (click)="addLike(product)" class="like-button">🤍</button>
+      <span class="likes-count">{{ product.likes }}</span>
+    </div>
+  </div>
+</div>

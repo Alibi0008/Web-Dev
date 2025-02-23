@@ -1,0 +1,127 @@
+/* Основной фон и шрифт для страницы */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер для карточек */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Оформление карточки товара */
+.product-card {
+  width: 180px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Изображение товара */
+.product-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Заголовок карточки */
+.product-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+/* Описание товара */
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Кнопка "Купить" */
+.buy-button {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #218838;
+}
+
+/* Блок иконок для шаринга */
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.share-buttons a {
+  display: inline-block;
+}
+
+.like-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.like-button {
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+.likes-count {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.like-button {
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif; /* New font */
+}
+
+.like-button:hover {
+  transform: scale(1.1);
+  background-color: #e84118;
+}
+
+

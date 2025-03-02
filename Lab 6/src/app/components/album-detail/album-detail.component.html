@@ -1,0 +1,19 @@
+<div class="detail-container">
+  <h2>Album Detail</h2>
+
+  <div class="detail-row">
+    <label><strong>ID:</strong></label>
+    <span>{{ album?.id }}</span>
+  </div>
+
+  <div class="detail-row">
+    <label><strong>Title:</strong></label>
+    <input [(ngModel)]="newTitle" placeholder="Album Title" />
+  </div>
+
+  <div class="detail-actions">
+    <button (click)="saveTitle()">Save</button>
+    <button (click)="goBack()">Return</button>
+    <a [routerLink]="['/albums', album?.id, 'photos']" class="photos-link">Photos</a>
+  </div>
+</div>

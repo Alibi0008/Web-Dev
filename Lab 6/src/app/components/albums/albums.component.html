@@ -1,0 +1,15 @@
+<!-- src/app/components/albums/albums.component.html -->
+<h2>Albums</h2>
+
+<!-- Форма для создания нового альбома -->
+<div>
+  <input type="text" [(ngModel)]="newAlbumTitle" placeholder="New album title">
+  <button (click)="createAlbum()">Create Album</button>
+</div>
+
+<ul>
+  <li *ngFor="let album of albums">
+    <a [routerLink]="['/albums', album.id]">{{ album.title }}</a>
+    <button (click)="deleteAlbum(album.id)">Delete</button>
+  </li>
+</ul>

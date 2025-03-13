@@ -1,0 +1,11 @@
+<app-launch-filter (filterEvent)="filterSuccessful()"></app-launch-filter>
+
+
+<ul>
+  <li *ngFor="let launch of filteredLaunches">
+    <strong>{{ launch.mission_name }}</strong> - {{ launch.launch_date_utc | date }}
+    <span *ngIf="launch.launch_success" style="color: green" class="success">✔ Успешный</span>
+    <span *ngIf="!launch.launch_success" style="color: red" class="fail">✖ Неудачный</span>
+  </li>
+</ul>
+

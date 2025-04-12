@@ -1,0 +1,26 @@
+<!-- src/app/components/vacancy-list/vacancy-list.component.html -->
+<div class="container py-5">
+  <button class="btn btn-link mb-4" (click)="goBack()">
+    ← Назад к списку компаний
+  </button>
+
+  <h2 class="mb-4 text-success">
+    {{ selectedCompany?.name }}: Вакансии
+  </h2>
+
+  <div class="list-group">
+    <div
+      class="list-group-item list-group-item-action flex-column align-items-start mb-2 shadow-sm hover-card"
+      *ngFor="let vac of vacancies">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{ vac.name }}</h5>
+        <small class="text-primary fw-bold">{{ vac.salary | number }} ₸</small>
+      </div>
+      <p class="mb-1">{{ vac.description }}</p>
+    </div>
+  </div>
+
+  <div *ngIf="vacancies.length === 0" class="alert alert-warning mt-4">
+    Пока нет вакансий у этой компании.
+  </div>
+</div>
